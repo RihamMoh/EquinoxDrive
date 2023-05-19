@@ -2,6 +2,14 @@
 
 A personal cloud storage website called ExuinoxDrive was created with the intention of being altered by others and learning more about react JS development. However, this website can only be used with Linux.
 
+## Features
+* The frontend is developed with React JS.
+* The backend is developed with Node.js.
+* Use some Bootstrap CSS and other CSS files to get a pretty look.
+* The code is written in a clean manner, and it is easy to understand and make changes to.
+* well-organised component tree.
+
+
 ## Functions
 * Get the names of all files and folders in the provided directory in the server.
 * see information about files and folders in the provided server.
