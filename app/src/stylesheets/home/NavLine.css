@@ -1,0 +1,11 @@
+:root {
+  --file-options-icons-transition: 200ms;
+}
+div#navline > div#file-options > div#options i {
+  -webkit-text-stroke: 0.1px;
+  border-radius: 20px;
+}
+div#navline > div#file-options > div#options i:hover {
+  background-color: var(--dark-background);
+  transition: var(--file-options-icons-transition) ease;
+}

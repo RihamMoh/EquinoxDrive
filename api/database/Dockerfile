@@ -1,0 +1,8 @@
+FROM mysql/mysql-server:latest
+
+ENV MYSQL_ROOT_PASSWORD=QoT|B7Hq
+ENV MYSQL_DATABASE=equinoxdrive
+ENV MYSQL_USER=equinox_drive_user
+ENV MYSQL_PASSWORD=3qU1n0xdr!v3P45SwORd
+
+EXPOSE 3306

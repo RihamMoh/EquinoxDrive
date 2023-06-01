@@ -1,0 +1,24 @@
+version: "3"
+services:
+  database:
+    build: ./api/database
+    networks:
+      - equinoxdrive-api-bridge-network
+  backend:
+    build: ./api/javascript/
+    ports:
+      - "$API_LOCAL_EXPRESS_PORT:8390"
+      - "$API_LOCAL_WS_PORT:99"
+    depends_on:
+      - database
+    networks:
+      - equinoxdrive-api-bridge-network
+  frontend:
+    build: ./app
+    ports:
+      - "$APP_LOCAL_PORT:80"
+    depends_on:
+      - backend
+networks:
+  equinoxdrive-api-bridge-network:
+    driver: bridge

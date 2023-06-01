@@ -1,0 +1,66 @@
+:root {
+  --notification-area-width: max(320px, 30vw);
+  --notification-area-max-height: 250px;
+  --notification-area-transition: 200ms;
+  --notification-area-index: 1050;
+  --notification-area-background: #fff;
+}
+div#notification-area {
+  position: absolute;
+  bottom: 0;
+  right: calc(var(--notification-area-width) / -3);
+  width: var(--notification-area-width);
+  max-height: var(--notification-area-max-height);
+  transition: var(--notification-area-transition);
+  display: none;
+  transform: scale(0.25);
+  z-index: var(--notification-area-index);
+  background-color: var(--notification-area-background);
+}
+div#notification-area.show {
+  display: flex;
+  transform: scale(1);
+  right: 0;
+  bottom: 200%;
+}
+div#notification-area.fit-to-screen {
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 34px;
+  position: fixed;
+  box-shadow: 0px 0px 4px #888 !important;
+  border-radius: 0 !important;
+}
+div#notification-area > div#body::-webkit-scrollbar {
+  width: 3px;
+}
+div#notification-area > div#body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-red);
+  cursor: pointer;
+}
+div#notification-area > div#body::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+div#notification-area > div#body > div:hover {
+  background-color: var(--hover-blue);
+}
+div#notification-area
+  > div#body
+  > div
+  > div#remove-notification
+  > div.icon
+  > i {
+  visibility: hidden;
+}
+div#notification-area
+  > div#body
+  > div:hover
+  > div#remove-notification
+  > div.icon
+  > i {
+  visibility: visible;
+}
+div#notification-area > div#body > div > div#msg-container {
+  width: 100%;
+}

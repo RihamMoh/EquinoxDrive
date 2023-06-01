@@ -1,0 +1,23 @@
+div#error-elm {
+  font-family: sans-serif;
+}
+div#error-elm > div#big-text {
+  font-size: 6rem;
+  letter-spacing: 20px;
+  padding-left: 10px;
+}
+div#error-elm > div#small-text {
+  font-size: 1.3rem;
+  letter-spacing: 7px;
+}
+@media only screen and (max-width: 450px) {
+  div#error-elm > div#big-text {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    padding-left: 5px;
+  }
+  div#error-elm > div#small-text {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+}

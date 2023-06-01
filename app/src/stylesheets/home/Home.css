@@ -1,0 +1,9 @@
+#footer {
+  border-top: 2px solid var(--primary-red);
+}
+div#main-body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

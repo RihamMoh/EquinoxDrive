@@ -1,0 +1,23 @@
+:root {
+  --background: #f7f7f7;
+  --primary-red: #cc2455;
+  --primary-blue: #2455cc;
+  --primary-green: #55cc24;
+  --hover-blue: aliceblue;
+  --popup-overlay: rgba(0, 0, 0, 0.5);
+  --file-popup-index: 1055;
+  --mode-alert-index: 1100;
+  --dark-background: #d5d5d5;
+}
+.bg-f7f7f7 {
+  background-color: #f7f7f7;
+}
+.color-f7f7f7 {
+  color: #f7f7f7;
+}
+.bg-red {
+  background-color: var(--primary-red);
+}
+.color-red {
+  color: var(--primary-red);
+}

@@ -1,0 +1,68 @@
+:root {
+  --download-upload-area-width: max(300px, 25vw);
+  --download-upload-area-max-height: 250px;
+  --download-upload-area-transition: 200ms;
+  --download-upload-area-index: 1050;
+  --download-upload-area-background: #fff;
+}
+div#download-upload-area {
+  position: absolute;
+  bottom: 0;
+  right: calc(var(--download-upload-area-width) / -3);
+  width: var(--download-upload-area-width);
+  max-height: var(--download-upload-area-max-height);
+  transition: var(--download-upload-area-transition);
+  display: none;
+  transform: scale(0.25);
+  z-index: var(--download-upload-area-index);
+  background-color: var(--download-upload-area-background);
+}
+div#download-upload-area.show {
+  display: flex;
+  transform: scale(1);
+  right: 0;
+  bottom: 200%;
+}
+div#download-upload-area.fit-to-screen {
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 34px;
+  position: fixed;
+  box-shadow: 0px 0px 4px #888 !important;
+  border-radius: 0 !important;
+}
+div#download-upload-area > div#body::-webkit-scrollbar {
+  width: 3px;
+}
+div#download-upload-area > div#body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-red);
+  cursor: pointer;
+}
+div#download-upload-area > div#body::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+div#download-upload-area > div#body > div:hover {
+  background-color: var(--hover-blue);
+}
+div#download-upload-area > div#body > div > div#cancel-download > div.icon > i {
+  visibility: hidden;
+}
+div#download-upload-area
+  > div#body
+  > div:hover
+  > div#cancel-download
+  > div.icon
+  > i {
+  visibility: visible;
+}
+div#download-upload-area > div#body > div > div#file-container {
+  width: 100%;
+}
+div#download-upload-area
+  > div#body
+  > div
+  > div#file-container
+  > div#progressBar {
+  height: 5px;
+}

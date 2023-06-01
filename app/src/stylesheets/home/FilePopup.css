@@ -1,0 +1,79 @@
+:root {
+  --filepopup-transition: 250ms;
+  --body-components-change-transition: 300ms;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+div#outershell {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: var(--popup-overlay);
+  display: none;
+  z-index: var(--file-popup-index);
+}
+div#outershell > div#popupbox {
+  position: absolute;
+  height: 70vh;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  left: 50%;
+  top: -100%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: var(--filepopup-transition) ease-in-out;
+}
+div#outershell > div#popupbox.active {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+div#outershell > div#popupbox > div.Body {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+div#outershell > div#popupbox > div.Body::-webkit-scrollbar {
+  width: 5px;
+}
+div#outershell > div#popupbox > div.Body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-red);
+  cursor: pointer;
+  border-radius: 10px;
+}
+div#outershell > div#popupbox > div.Body::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+div#outershell > div#popupbox > div.Body > div#properties {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0%;
+  transform: rotateY(0deg);
+  transition: all var(--body-components-change-transition) ease-in-out;
+}
+div#outershell > div#popupbox > div.Body > div#properties.hide {
+  right: 90%;
+  transform: rotateY(-60deg);
+}
+div#outershell > div#popupbox > div.Body > div#renameform {
+  transition: all var(--body-components-change-transition) ease-in-out;
+  transform: rotateY(60deg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 90%;
+}
+div#outershell
+  > div#popupbox
+  > div.Body
+  > div#properties.hide
+  ~ div#renameform {
+  transform: rotateY(0deg);
+  left: 0%;
+}

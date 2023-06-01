@@ -1,0 +1,8 @@
+{
+  "webApp": {
+    "port": 8390
+  },
+  "rootDir": "/",
+  "downloadFileName": "CloudServerDownloadFile",
+  "maxFileDownloadSize": 20000000
+}

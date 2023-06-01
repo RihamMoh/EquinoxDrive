@@ -1,0 +1,73 @@
+div#scroll > table#container {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  table-layout: fixed;
+  width: 90%;
+  text-align: start;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+}
+div#scroll > table#container > thead#dir-table-head > tr {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--primary-red);
+  color: #fff;
+}
+div#scroll > table#container > thead#dir-table-head > tr > th:first-child {
+  border-top-left-radius: 5px;
+}
+div#scroll > table#container > thead#dir-table-head > tr > th:last-child {
+  border-top-right-radius: 5px;
+}
+div#scroll > table#container > tbody#dir-table-body {
+  width: 100%;
+}
+div#scroll > table#container > tbody#dir-table-body > tr {
+  width: 100%;
+  cursor: pointer;
+}
+div#scroll > table#container > tbody#dir-table-body > tr:hover,
+div#scroll > table#container > tbody#dir-table-body > tr.active {
+  background-color: var(--hover-blue);
+}
+div#scroll > table#container > tbody#dir-table-body > tr:last-child {
+  border-bottom: 3px solid var(--primary-red);
+}
+div#scroll > table#container > tbody#dir-table-body > tr > td,
+div#scroll > table#container > tbody#dir-table-body > tr > td > span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+div#scroll
+  > table#container
+  > tbody#dir-table-body
+  > tr
+  > td
+  > span.select-row {
+  visibility: hidden;
+}
+div#scroll
+  > table#container
+  > tbody#dir-table-body
+  > tr:hover
+  > td
+  > span.select-row,
+div#scroll
+  > table#container
+  > tbody#dir-table-body
+  > tr
+  > td
+  > span.select-row
+  > input.tmp-active,
+div#scroll
+  > table#container
+  > tbody#dir-table-body
+  > tr.active
+  > td
+  > span.select-row {
+  visibility: visible;
+}
