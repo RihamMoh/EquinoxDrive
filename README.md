@@ -59,4 +59,8 @@ cd app/
 npm run install --save-exact
 ```
 
+Use the following command in the 'equinox-drive-app' directory to start the app:
+```
+sh run.sh
+```
 <strong style="font-size:1.5rem">Creating in Progress</strong>
