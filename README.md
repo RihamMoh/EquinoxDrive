@@ -39,10 +39,10 @@ cd equinox-drive-app
 git clone https://github.com/RihamMoh/EquinoxDrive.git .
 ```
 ### For only use
-Make sure the current directory is the newly created 'equinox-drive-app' directory.And use docker-compose to build up.
-- run following commands to build up,
+Make sure the current directory is the newly created 'equinox-drive-app' directory.And run following command to build up,
 ```
-API_LOCAL_EXPRESS_PORT=8008 API_LOCAL_WS_PORT=9999 APP_LOCAL_PORT=<EquinoxDrive website port> docker-compose up
+API_LOCAL_EXPRESS_PORT=8008 API_LOCAL_WS_PORT=9999 APP_LOCAL_PORT=[EquinoxDrive website port] docker-compose up
 ```
-3. 
+If there are any problems downloading node_modules in frontend or backend, run **npm install --save-exact** in **[equinox-drive-app path]/app/** for frontend and **[equinox-drive-app path]/api/javascript/api/** for backend.
+
 <strong style="font-size:1.5rem">Creating in Progress</strong>
