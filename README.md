@@ -19,47 +19,63 @@ A personal cloud storage website called ExuinoxDrive was created with the intent
 - create, download, rename, remove, create new folders, and upload files to the server.
 
 ## User guide
+
 We want to install some modules. For run this website. they are:
+
 ```
 NodeJs
 Npm ( must be 5.2 or above )
 Mysql
 Git
 ```
+
 And Docker if needed.
 
 ### Installing Steps
+
 1. After installing all requirements,make an empty directory for the app installation.And make it as the working directory.
-  ```
-  mkdir equinox-drive-app
-  cd equinox-drive-app
-  ```
+
+```
+mkdir equinox-drive-app
+cd equinox-drive-app
+```
+
 2. Clone the 'EqunioxDrive' repository to the "equinox-drive-app' directory.
-  ```
-  git clone https://github.com/RihamMoh/EquinoxDrive.git .
-  ```
+
+```
+git clone https://github.com/RihamMoh/EquinoxDrive.git .
+```
+
 ### For only use
 
 Make sure the current directory is the newly created 'equinox-drive-app' directory.And run following command to build up:
+
 ```
 API_LOCAL_EXPRESS_PORT=8008 API_LOCAL_WS_PORT=9999 APP_LOCAL_PORT=[EquinoxDrive website port] docker-compose up
 ```
+
 If there are any problems downloading node_modules in frontend or backend, run **npm install --save-exact** in **[equinox-drive-app path]/app/** for frontend and **[equinox-drive-app path]/api/javascript/api/** for backend.
 
 ### For use and development
+
 Make sure the current directory is the newly created 'equinox-drive-app' directory.And run following commands:
+
 ##### For backend
+
 ```
 cd api/javascript/api/
 npm run install --save-exact
 ```
+
 ##### For frontend
+
 ```
 cd app/
 npm run install --save-exact
 ```
 
 Use the following command in the 'equinox-drive-app' directory to start the app:
+
 ```
 sh run.sh
 ```
