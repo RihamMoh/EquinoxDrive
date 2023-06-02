@@ -18,7 +18,7 @@ A personal cloud storage website called ExuinoxDrive was created with the intent
 - Travel through folders and be able to make changes.
 - create, download, rename, remove, create new folders, and upload files to the server.
 
-## Developer guide
+## User guide
 We want to install some modules. For run this website. they are:
 ```
 NodeJs
@@ -38,4 +38,11 @@ cd equinox-drive-app
 ```
 git clone https://github.com/RihamMoh/EquinoxDrive.git .
 ```
+### For only use
+Make sure the current directory is the newly created 'equinox-drive-app' directory.And use docker-compose to build up.
+- run following commands to build up,
+```
+API_LOCAL_EXPRESS_PORT=8008 API_LOCAL_WS_PORT=9999 APP_LOCAL_PORT=<EquinoxDrive website port> docker-compose up
+```
+3. 
 <strong style="font-size:1.5rem">Creating in Progress</strong>
