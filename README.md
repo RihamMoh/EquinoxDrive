@@ -64,14 +64,14 @@ Make sure the current directory is the newly created 'equinox-drive-app' directo
 
 ```
 cd api/javascript/api/
-npm run install --save-exact
+npm install --save-exact
 ```
 
 ##### For frontend
 
 ```
 cd app/
-npm run install --save-exact
+npm install --save-exact
 ```
 
 Use the following command in the 'equinox-drive-app' directory to start the app:
