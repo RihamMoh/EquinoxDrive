@@ -18,4 +18,24 @@ A personal cloud storage website called ExuinoxDrive was created with the intent
 - Travel through folders and be able to make changes.
 - create, download, rename, remove, create new folders, and upload files to the server.
 
+## Developer guide
+We want to install some modules. For run this website. they are:
+```
+NodeJs
+Npm
+Mysql
+Git
+```
+And Docker if needed.
+
+### Installing Steps
+1. After installing all requirements,make an empty directory for the app installation.And make it as the working directory.
+```
+mkdir equinox-drive-app
+cd equinox-drive-app
+```
+2. Clone the 'EqunioxDrive' repository to the "equinox-drive-app' directory.
+```
+git clone https://github.com/RihamMoh/EquinoxDrive.git .
+```
 <strong style="font-size:1.5rem">Creating in Progress</strong>
