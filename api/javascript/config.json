@@ -1,6 +1,6 @@
 {
   "webApp": {
-    "port": 8390
+    "port": 8008
   },
   "rootDir": "/",
   "downloadFileName": "CloudServerDownloadFile",

@@ -6,8 +6,8 @@ WORKDIR /root/react_app/api/
 ADD ./api/node_modules ./node_modules
 RUN npm install --save-exact
 
-EXPOSE 8390
-EXPOSE 99
+EXPOSE 8008
+EXPOSE 9999
 
 ENTRYPOINT ["npm","run","start","&&"]
 

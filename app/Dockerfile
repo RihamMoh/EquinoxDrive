@@ -7,6 +7,6 @@ ADD ./node_modules ./node_modules
 ADD  ./package.json ./package-lock.json ./
 RUN npm install --save-exact
 
-EXPOSE 80
+EXPOSE 3000
 
 ENTRYPOINT ["npm","run","start","&&"]

@@ -39,7 +39,7 @@ expressApp.use(function (req, res, next) {
 startExpressApp(expressApp);
 expressApp.listen(webApp.port);
 
-const wss = new WebSocket.Server({ port: 99 });
+const wss = new WebSocket.Server({ port: 9999 });
 let wsConnections = {};
 let clients = new Map();
 wss.on("connection", (ws) => {
